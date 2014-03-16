@@ -63,4 +63,13 @@ config SAMPLE_RPMSG_CLIENT
 	  to communicate with an AMP-configured remote processor over
 	  the rpmsg bus.
 
+config SAMPLE_HELLO
+        tristate "Build Hello World sample"
+        depends on m
+        help
+         This config option will allow you to build a sample Hello World
+         module, to see sample messages in kernel log.
+        
+         If in doubt, say "N" here.
+
 endif # SAMPLES
